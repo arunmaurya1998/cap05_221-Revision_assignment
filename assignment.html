@@ -1,0 +1,34 @@
+<!-- Instructions:
+Set up the HTML structure:
+
+Add an input field:
+Inside the body tag, create an input element with the following attributes:
+type="text": Specifies that the input should be a text field.
+id="myInput": Assigns an identifier to the input field for later manipulation.
+
+Add a button:
+Below the input field, create a button element with the following attribute:
+id="myButton": Assigns an identifier to the button for later manipulation.
+Set the button's innerHTML to "Submit" or any other appropriate label.
+Whenever the user clicked on the submit button user got an alert entered value 
+and below the button, you should see the entered value displayed on the webpage -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="enter text">
+    <button onclick="show()" id="myButton">Submit</button>
+
+</body>
+<script>
+function show()
+{
+    alert(document.getElementById("myInput").value)
+}
+</script>
+</html>
